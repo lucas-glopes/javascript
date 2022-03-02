@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Verificador de Nacionalidade</h1>
+    Seu país de origem: <input type="text" name="origem" id="pais">
+    <input type="button" value="Verificar" onclick="nac()">
+    <p>Nacionalidade: <span id="res"></span></p>
+    <script>
+        function nac() {
+            var local = document.getElementById('pais').value
+            var res = document.getElementById('res')
+            if (local == 'Brasil') {
+                res.innerText = 'Brasileiro'
+            } else {
+                res.innerText = 'Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>

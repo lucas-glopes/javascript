@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17.5pt;
+        }
+        input {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 17.5pt;
+            font-weight: bold;
+        }
+
+        span {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Samando Valores</h1>
+    <input type="number" name="valor01" id="valor01"> +
+    <input type="number" name="valor02" id="valor02">
+    <input type="button" value="somar" onclick="somar()">
+    <p>Resultado = <strong><span id="res"></span></strong></p>
+    <script>
+        function somar() {
+            var val01 = document.getElementById('valor01')
+            var val02 = document.getElementById('valor02')
+            var res = document.getElementById('res')
+            var soma = val01 + val02
+            var n01 = Number(valor01.value)
+            var n02 = Number(valor02.value)
+            var soma = n01 + n02
+            res.innerText = soma
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+   /* geral */
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   /* fonte */
+   font-family: "Poppins", sans-serif;
+}
+
+i {
+   /* fonte */
+   font-size: 2em;
+
+   /* margem */
+   margin: 15px 20px;
+
+   /* cursos */
+   cursor: pointer;
+}
+
+.tela_preta {
+   /* fundo */
+   background-color: rgb(0, 0, 0);
+
+   /* tamanho */
+   height: 100vh;
+   width: 100vw;
+
+   /* posição */
+   position: fixed;
+   top: 0;
+
+   /* opacidade */
+   opacity: 0;
+
+   /* cursor */
+   pointer-events: none;
+
+   transition: opacity 0.2s ease-out;
+}
+
+.show_tela_preta {
+   /* opacidade */
+   opacity: 0.5;
+}
+
+.menu {
+   /* fundo */
+   background-color: white;
+
+   /* tamanho */
+   height: 100vh;
+   width: 320px;
+
+   /* posição */
+   position: fixed;
+   top: 0;
+   left: -380px;
+
+   /* sombra */
+   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+
+   /* transição */
+   transition: left 0.3s ease-out;
+}
+
+.show_menu {
+   /* posição */
+   left: 0;
+}
+
+.menu > i {
+   /* posição */
+   position: absolute;
+   left: calc(320px + 15px);
+   top: 12px;
+
+   /* margem */
+   margin: 0;
+
+   /* padding */
+   padding: 0 5px;
+
+   /* borda */
+   border: 3px solid white;
+
+   /* texto */
+   color: white;
+
+   /* sombra */
+   box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+
+   /* transição */
+   transition: all 0.2s ease-out;
+}
+
+.menu > i:hover {
+   /* texto */
+   color: hsl(0, 100%, 75%);
+
+   /* borda */
+   border: 3px solid hsl(0, 100%, 75%);
+}
+
+.menu > h2 {
+   /* texto */
+   text-align: center;
+
+   /* fonte */
+   font-size: 2em;
+
+   /* padding */
+   padding: 20px;
+
+   /* borda */
+   border-bottom: 7px solid lightgray;
+}
+
+.menu ul > li:first-child {
+   /* borda */
+   border-top: 2px solid gray;
+}
+
+.menu ul > li {
+   /* padding */
+   padding: 20px 30px;
+
+   /* borda */
+   border-bottom: 2px solid gray;
+
+   /* fonte */
+   font-weight: bold;
+   font-size: 1.2em;
+
+   /* transição */
+   transition: background-color 0.2s ease-out;
+
+   /* cursor */
+   cursor: pointer;
+}
+
+.menu ul > li:hover {
+   /* fundo */
+   background-color: lightcyan;
+}
+
+h1 {
+   /* fonte */
+   font-size: 2em;
+
+   /* margem */
+   margin: 15px 20px -15px;
+}
+
+p {
+   /* fonte */
+   font-size: 1em;
+
+   /* margem */
+   margin: 30px 20px;
+}
