@@ -2,3 +2,4 @@
 * text=auto
 
 *.htm linguist-language=JavaScript
+*.css linguist-language=CSS
